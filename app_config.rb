@@ -4,7 +4,7 @@ SiteUrl = "http://lamernews.com"
 SiteDescription = "Programming News"
 
 # Redis config
-RedisURL = "redis://127.0.0.1:10000"
+RedisURL = "redis://redistogo:99e544ce3308bdf8ae2da4b68ee03cbc@angelfish.redistogo.com:9017/"
 
 # Security
 PBKDF2Iterations = 1000 # Set this to 5000 to improve security. But it is slow.
