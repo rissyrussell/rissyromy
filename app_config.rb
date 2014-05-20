@@ -1,7 +1,7 @@
 # General
-SiteName = "Lamer News"
-SiteUrl = "http://lamernews.com"
-SiteDescription = "Programming News"
+SiteName = "Visually Internal Features"
+SiteUrl = "http://visuallyfeaturerequests.com"
+SiteDescription = "Visually Internal Feature Requests"
 
 # Redis config
 RedisURL = "redis://redistogo:99e544ce3308bdf8ae2da4b68ee03cbc@angelfish.redistogo.com:9017/"
