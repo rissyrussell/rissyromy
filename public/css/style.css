@@ -23,8 +23,8 @@ li {
 header {
     display:block;
     position:relative;
-    padding: 15px 0px 0px 15px;
-    background-color:#eee;
+    padding: 15px 0px 15px 15px;
+    background-color:#ef5093;
     border-bottom: 1px #ccc solid;
 }
 
