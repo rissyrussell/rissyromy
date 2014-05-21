@@ -3,6 +3,6 @@
 
 Authtype Basic
 AuthName "Put whatever you want here"
-AuthUserFile /var/www/vhosts/serene-headland-7634/httpdoc/lamernews/.htpasswd
+AuthUserFile /var/www/vhosts/serene-headland-7634.com/httpdoc/lamernews/.htpasswd
 Require valid-user
 
