@@ -1,8 +1,0 @@
-.htaccess
-
-
-Authtype Basic
-AuthName "Put whatever you want here"
-AuthUserFile /var/www/serene-headland-7634.com/.htpasswd
-Require valid-user
-
