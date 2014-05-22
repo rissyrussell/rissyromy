@@ -25,6 +25,18 @@
 # those of the authors and should not be interpreted as representing official
 # policies, either expressed or implied, of Salvatore Sanfilippo.
 
+class ClientsController < ApplicationController::Base
+ before_filter :authenticate
+
+protected
+
+def authenticate
+  authenticate_or_request_with_http_basic do |username, password|
+        username == "user" && password == "%$§$§"
+    
+  end
+end
+
 require_relative 'app_config'
 require 'rubygems'
 require 'hiredis'
@@ -43,10 +55,6 @@ require 'uri'
 
 Version = "0.11.0"
 
-class ClientsController < ApplicationController::Base
- before_filter :authenticate
-
-protected
 
 def setup_redis(uri=RedisURL)
     uri = URI.parse(uri)
@@ -2095,11 +2103,5 @@ def list_items(o)
 end
 
 
-def authenticate
-  authenticate_or_request_with_http_basic do |username, password|
-        username == "user" && password == "%$§$§"
-    
-  end
-end
 
 
