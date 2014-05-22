@@ -46,12 +46,6 @@ Version = "0.11.0"
 class ClientsController < ApplicationController
 before_filter :authenticate
 
-def authenticate
-  authenticate_or_request_with_http_basic do |username,password|
-    username=="test" && password=="testname"
-  end
-end
-
 def setup_redis(uri=RedisURL)
     uri = URI.parse(uri)
     $r = Redis.new(:host => uri.host, :port => uri.port, :password => uri.password) unless $r
@@ -2097,4 +2091,13 @@ def list_items(o)
     end
     aux
 end
+
+protected
+
+def authenticate
+  authenticate_or_request_with_http_basic do |username,password|
+    username=="test" && password=="testname"
+  end
+end
+
 
