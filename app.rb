@@ -44,7 +44,7 @@ require 'uri'
 Version = "0.11.0"
 
 class ClientsController < ApplicationController
-before_filter :authenticate
+ before_filter :authenticate
 
 def setup_redis(uri=RedisURL)
     uri = URI.parse(uri)
@@ -2095,8 +2095,8 @@ end
 protected
 
 def authenticate
-  authenticate_or_request_with_http_basic do |username,password|
-    username=="test" && password=="testname"
+   http_basic_authenticate_with :name => "romy", :password => "larissa"
+    
   end
 end
 
