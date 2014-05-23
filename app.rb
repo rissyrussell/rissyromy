@@ -44,23 +44,6 @@ require 'uri'
 
 Version = "0.11.0"
 
-#here is the beginning
-class ApplicationController < ActionController::Base
-USER, PASSWORD = 'dhh', 'secret'
-
-before_filter :authentication_check, :except => :index
-
-#Any other method
-
- private
-  def authentication_check
-   authenticate_or_request_with_http_basic do |user, password|
-    user == USER && password == PASSWORD
-   end
-  end
-end
-#here is the end
-
 def setup_redis(uri=RedisURL)
     uri = URI.parse(uri)
     $r = Redis.new(:host => uri.host, :port => uri.port, :password => uri.password) unless $r
