@@ -62,5 +62,3 @@ APIMaxNewsCount = 32
 # (this will prevent users from recovery accounts if the password gets lost).
 MailRelay = "localhost"
 MailFrom = "noreply@example.com"
-
-config.middleware.insert 0, "Rack::WWWhisper"
