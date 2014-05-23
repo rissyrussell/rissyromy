@@ -44,6 +44,8 @@ require 'uri'
 
 Version = "0.11.0"
 
+http_basic_authenticate_with :name => "dhh", :password => "secret"
+
 def setup_redis(uri=RedisURL)
     uri = URI.parse(uri)
     $r = Redis.new(:host => uri.host, :port => uri.port, :password => uri.password) unless $r
