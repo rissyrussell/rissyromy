@@ -1035,7 +1035,6 @@ def navbar_admin_link
 end
 
 def application_header
-    img src="images/visually.png" alt="rss feed" 
     navitems = [    ["TOP","/"],
                     ["LATEST","/latest/0"],
                     ["RANDOM","/random"],                    
