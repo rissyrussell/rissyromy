@@ -1035,7 +1035,7 @@ def navbar_admin_link
 end
 
 def application_header
-    navitems = [    ["top","/"],
+    navitems = [    ["TOP","/"],
                     ["latest","/latest/0"],
                     ["random","/random"],                    
                     ["submit","/submit"]]
