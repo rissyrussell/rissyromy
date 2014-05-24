@@ -29,6 +29,7 @@ header {
 }
 
 header h1 {
+    background-image: url(/images/visually.png);
     display: inline;
     font-size:0.8em;
     font-style:italic;
