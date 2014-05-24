@@ -127,7 +127,6 @@ class HTMLGen
             H.head {
                 self.meta(:charset => "utf-8")+
                 self.title{H.entities @title}+
-                self.link(:href => "/images/visually.png")+
                 self.meta(:content => :index, :name => :robots)+
                 self.meta(:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => :viewport)+
                 self.link(:href => "/css/style.css?v=10", :rel => "stylesheet",
