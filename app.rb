@@ -1019,7 +1019,7 @@ end
 def navbar_replies_link
     return "" if !$user
     count = $user['replies'] || 0
-    H.a(:href => "/replies", :class => "replies") {
+    H.a(:href => "/replies", :class => "REPLIES") {
         "replies"+
         if count.to_i > 0
             H.sup {count}
