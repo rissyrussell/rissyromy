@@ -154,4 +154,4 @@ class AdminController < ApplicationController
       username == 'admin' && password == 'password'
     end
   end
-end
+  
