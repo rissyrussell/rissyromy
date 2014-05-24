@@ -13,7 +13,7 @@ a {
 h2 {
     margin-bottom:20px;
     font-size:22px;
-    color:#333;
+    color:#FFFFFF;
 }
 
 li {
@@ -32,11 +32,11 @@ header h1 {
     display: inline;
     font-size:1.3em;
     font-weight:bold;
-    color:#255;
+    color:#FFFFFF;
 }
 
 header h1 a {
-    color:#333;
+    color:#FFFFFF;
 }
 
 header h1 small {
