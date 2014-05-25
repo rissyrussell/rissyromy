@@ -24,7 +24,7 @@ header {
     display:block;
     position:relative;
     padding: 15px 0px 15px 15px;
-    background-color:#ff6666;
+    background-color:rgba(1,64,93,0.9);
     border-bottom: 1px #ccc solid;
 }
 
