@@ -25,7 +25,7 @@ header {
     position:relative;
     padding: 15px 0px 15px 15px;
     background-color:rgba(1,64,93,0.9);
-    background-image: url('/images/visually.jpeg') no repeat;
+    background-image: url('/images/visually.jpeg') no-repeat;
     border-bottom: 1px #ccc solid;
 }
 
