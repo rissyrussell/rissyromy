@@ -30,6 +30,11 @@ header {
     border-bottom: 1px #ccc solid;
 }
 
+img.resize{
+    width:5%; 
+    height: auto;
+}
+
 header h1 {
     display: inline;
     font-size:0.8em;
