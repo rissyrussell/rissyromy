@@ -30,7 +30,7 @@ header {
     border-bottom: 1px #ccc solid;
 }
 
-img.resize{
+img.source-image{
     width:5%; 
     height: auto;
 }
