@@ -28,6 +28,7 @@ header {
     background-image: url('/images/visually.jpeg');
     background-repeat:no-repeat;
     background-size:5%;
+    background-position:0x 0x 0x 0x;
     border-bottom: 1px #ccc solid;
 }
 
