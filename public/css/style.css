@@ -27,13 +27,10 @@ header {
     background-color:rgba(1,64,93,0.9);
     background-image: url('/images/visually.jpeg');
     background-repeat:no-repeat;
+    background-size:5%;
     border-bottom: 1px #ccc solid;
 }
 
-img.source-image{
-    width:5%; 
-    height: auto;
-}
 
 header h1 {
     display: inline;
