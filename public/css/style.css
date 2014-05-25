@@ -26,8 +26,6 @@ header {
     padding: 15px 0px 15px 15px;
     background-color:rgba(1,64,93,.9);
     background-image: url('/images/visually.jpeg');
-    background-repeat: no-repeat;
-    background-size: 100%;
     border-bottom: 1px #ccc solid;
 }
 
