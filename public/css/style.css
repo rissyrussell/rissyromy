@@ -59,6 +59,10 @@ footer {
     margin-bottom:30px;
 }
 
+footer a {
+    color:#000;
+}
+
 nav {
     margin-bottom:15px;
     display: inline;
