@@ -23,12 +23,12 @@ li {
 header {
     display:block;
     position:relative;
-    padding: 15px 0px 15px 15px;
+    padding: 15px 0px 15px 90px;
     background-color:rgba(1,64,93,0.9);
     background-image: url('/images/visually.jpeg');
     background-repeat:no-repeat;
     background-size:5%;
-    background-position:0x 0x 0x 0x;
+    background-position:center left;
     border-bottom: 1px #ccc solid;
 }
 
