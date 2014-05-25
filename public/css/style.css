@@ -1,19 +1,19 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-rendering: optimizeLegibility;
-   
+}
 
 a {
     text-decoration:none;
-    color:#fff;
+    color:#666;
 }
 
 h2 {
     margin-bottom:20px;
     font-size:22px;
-    color:#000;
+    color:#333;
 }
 
 li {
@@ -24,20 +24,19 @@ header {
     display:block;
     position:relative;
     padding: 15px 0px 15px 15px;
-    background-color:rgba(1,64,93,.9);
-    /*background-image: url('/images/visually.jpeg'); */
+    background-color:#ff6666;
     border-bottom: 1px #ccc solid;
 }
 
 header h1 {
     display: inline;
-    font-size:0.8em;
-    font-style:italic;
-    color:#FFFFFF;
+    font-size:1.3em;
+    font-weight:bold;
+    color:#333;
 }
 
 header h1 a {
-    color:#FFFFFF;
+    color:#333;
 }
 
 header h1 small {
@@ -60,23 +59,19 @@ footer {
     margin-bottom:30px;
 }
 
-footer a {
-    color:#000;
-}
-
 nav {
     margin-bottom:15px;
     display: inline;
 }
 
 nav a {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 #account {
-    color:#ffffff;
+    color:#aaa;
     position: absolute;
-    top: 14px;
+    top: 5px;
     right: 10px;
     font-weight:bold;
     font-size:14px;
@@ -317,7 +312,7 @@ topcomment {
     top: 5%;
     width: 90%;
     height: 10em;
-    color: #ccc;
+    color: #FFFFFF;
     margin: 0;
     padding: 1em;
     position: absolute;
