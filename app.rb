@@ -1054,7 +1054,7 @@ def application_header
                 "logout"
             }
         else
-            H.a(:href => "/login") {"login / register"}
+            H.a(:href => "/login") {"LOGIN / REGISTER"}
         end
     }
     menu_mobile = H.a(:href => "#", :id => "link-menu-mobile"){"<~>"}
