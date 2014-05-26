@@ -8,8 +8,6 @@ gem 'hiredis', '~> 0.4.5'
 gem 'json', '~> 1.7.7'
 gem 'ruby-hmac', '~> 0.4.0'
 gem 'omniauth'
-gem 'purecss-rails'
-
 
 group :development, :test do
   gem 'rake'
