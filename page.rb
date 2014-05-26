@@ -134,8 +134,6 @@ class HTMLGen
                 self.link(:href => "http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic", :rel => "stylesheet",
                           :type => "text/css")+
                 self.link(:href => "/images/visuallylogo.jpeg", :rel => "shortcut icon")+
-                self.link(:href => "http://yui.yahooapis.com/pure/0.4.2/pure-min.css", :rel => "stylesheet",
-                          :type => "text/css")+
                 self.script(:src => "/js/jquery.1.6.4.min.js"){}+
                 self.script(:src => "/js/app.js?v=10"){}
             }+
