@@ -117,7 +117,7 @@ get '/latest/:start' do
         :link => "/latest/$"
     }
     H.page {
-        H.h2 {"Latest news"}+
+        H.h2 {"Latest Features"}+
         H.section(:id => "newslist") {
             list_items(paginate)
         }
@@ -138,7 +138,7 @@ get '/saved/:start' do
         :link => "/saved/$"
     }
     H.page {
-        H.h2 {"Your saved news"}+
+        H.h2 {"Your saved features"}+
         H.section(:id => "newslist") {
             list_items(paginate)
         }
