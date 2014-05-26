@@ -124,6 +124,8 @@ class HTMLGen
     def page()  
         "<!DOCTYPE html>"+
         self.html {
+            self.link(:href => "http://yui.yahooapis.com/pure/0.4.2/pure-min.css", :rel => "stylesheet",
+                          :type => "text/css")+
             H.head {
                 self.meta(:charset => "utf-8")+
                 self.title{H.entities @title}+
