@@ -1,5 +1,5 @@
 
-AuthUserFile /lamernews/.htpasswd
+AuthUserFile /app/.htpasswd
 AuthType Basic
 AuthName "My Files"
 Require valid-user
