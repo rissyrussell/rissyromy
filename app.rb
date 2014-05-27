@@ -74,8 +74,8 @@ before do
 end
 
 
-use Rack::Auth::Basic, "Restricted Area" do |username, password|
-  username == 'admin' and password == 'admin'
+use Rack::Auth::Basic, "Authentication Required" do |username, password|
+  username == 'williamplayfair' and password == 'layalaya123'
 end
 
 get '/' do
