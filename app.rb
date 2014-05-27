@@ -74,10 +74,8 @@ before do
 end
 
 
-class Protected < Sinatra::Base
-
-  use Rack::Auth::Basic, "Protected Area" do |username, password|
-    username == 'foo' && password == 'bar'
+use Rack::Auth::Basic, "Restricted Area" do |username, password|
+  username == 'admin' and password == 'admin'
 end
 
 get '/' do
@@ -651,7 +649,7 @@ get '/random' do
     end
 end
 
-end
+
 
 ###############################################################################
 # API implementation
