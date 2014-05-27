@@ -73,6 +73,13 @@ before do
     increment_karma_if_needed if $user
 end
 
+
+class Protected < Sinatra::Base
+
+  use Rack::Auth::Basic, "Protected Area" do |username, password|
+    username == 'foo' && password == 'bar'
+end
+
 get '/' do
     H.set_title "#{SiteName} - #{SiteDescription}"
     news,numitems = get_top_news
@@ -642,6 +649,8 @@ get '/random' do
     else
         redirect "/news/#{counter}"
     end
+end
+
 end
 
 ###############################################################################
