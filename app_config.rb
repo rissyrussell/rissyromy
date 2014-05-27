@@ -8,7 +8,7 @@ RedisURL = "redis://redistogo:99e544ce3308bdf8ae2da4b68ee03cbc@angelfish.redisto
 
 # Security
 PBKDF2Iterations = 1000 # Set this to 5000 to improve security. But it is slow.
-UseOpenSSL = true
+UseOpenSSL = false
 PasswordMinLength = 8
 
 # Comments
