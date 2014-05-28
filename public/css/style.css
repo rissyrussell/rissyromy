@@ -191,6 +191,10 @@ form textarea {
     min-width:50em;
 }
 
+.comment a{
+    color:black;
+}
+
 .comment .avatar img {
     position:absolute;
     top:0px;
