@@ -1,5 +1,5 @@
 # General
-SiteName = "Visually Internal Features"
+SiteName = "Internal Features"
 SiteUrl = "http://visuallyfeaturerequests.com"
 SiteDescription = "Visually Internal Feature Requests"
 
