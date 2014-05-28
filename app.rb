@@ -312,9 +312,9 @@ end
 
 get '/submit' do
     redirect "/login" if !$user
-    H.set_title "Submit a new story - #{SiteName}"
+    H.set_title "Submit a new feature - #{SiteName}"
     H.page {
-        H.h2 {"Submit a new story"}+
+        H.h2 {"Submit a new feature"}+
         H.div(:id => "submitform") {
             H.form(:name=>"f") {
                 H.inputhidden(:name => "news_id", :value => -1)+
@@ -322,22 +322,22 @@ get '/submit' do
                 H.inputtext(:id => "title", :name => "title", :size => 80, :value => (params[:t] ? H.entities(params[:t]) : ""))+H.br+
                 H.label(:for => "url") {"url"}+H.br+
                 H.inputtext(:id => "url", :name => "url", :size => 60, :value => (params[:u] ? H.entities(params[:u]) : ""))+H.br+
-                "or if you don't have an url type some text"+
+                ""+
                 H.br+
-                H.label(:for => "text") {"text"}+
+                H.label(:for => "text") {"Details"}+
                 H.textarea(:id => "text", :name => "text", :cols => 60, :rows => 10) {}+
                 H.button(:name => "do_submit", :value => "Submit")
             }
         }+
         H.div(:id => "errormsg"){}+
-        H.p {
-            bl = "javascript:window.location=%22#{SiteUrl}/submit?u=%22+encodeURIComponent(document.location)+%22&t=%22+encodeURIComponent(document.title)"
-            "Submitting news is simpler using the "+
-            H.a(:href => bl) {
-                "bookmarklet"
-            }+
-            " (drag the link to your browser toolbar)"
-        }+
+        # H.p {
+            #  bl = "javascript:window.location=%22#{SiteUrl}/submit?u=%22+encodeURIComponent(document.location)+%22&t=%22+encodeURIComponent(document.title)"
+            #{  }"Submitting news is simpler using the "+
+            #  H.a(:href => bl) {
+            #   "bookmarklet"
+          #  }+
+            #{}" (drag the link to your browser toolbar)"
+        # }+
         H.script() {'
             $(function() {
                 $("input[name=do_submit]").click(submit);
