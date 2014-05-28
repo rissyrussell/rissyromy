@@ -1116,8 +1116,8 @@ def application_footer
     H.footer {
         links = [
             ["ABOUT", "/about"],
-            ["SOURCE CODE", "http://github.com/antirez/lamernews"],
-            ["RSS FEED", "/rss"],
+            ["SOURCE CODE", Source code],
+            ["RSS FEED", rss],
             ["twitter", FooterTwitterLink],
             ["google group", FooterGoogleGroupLink]
         ]
