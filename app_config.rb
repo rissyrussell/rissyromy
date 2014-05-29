@@ -19,7 +19,7 @@ UserCommentsPerPage = 10
 SubthreadsInRepliesPage = 10
 
 # Karma
-UserInitialKarma = 1
+UserInitialKarma = 5
 KarmaIncrementInterval = 3600
 KarmaIncrementAmount = 1
 NewsDownvoteMinKarma = 1
