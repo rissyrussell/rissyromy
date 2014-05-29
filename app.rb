@@ -1044,7 +1044,7 @@ end
 def application_header
     navitems = [    ["TOP","/"],
                     ["LATEST","/latest/0"],
-                    ["RANDOM","/random"],                    
+                    #["RANDOM","/random"],                    
                     ["SUBMIT","/submit"]]
     navbar = H.nav {
         navitems.map{|ni|
