@@ -1197,9 +1197,9 @@ def create_user(username,password)
     if $r.exists("username.to.id:#{username.downcase}")
         return nil, "Username is already taken, please try a different one."
     end
-    if rate_limit_by_ip(UserCreationDelay,"create_user",request.ip)
-        return nil, "Please wait some time before creating a new user."
-    end
+    #if rate_limit_by_ip(UserCreationDelay,"create_user",request.ip)
+    #    return nil, "Please wait some time before creating a new user."
+    #end
     id = $r.incr("users.count")
     auth_token = get_rand
     salt = get_rand
@@ -2055,7 +2055,7 @@ end
 def rate_limit_by_ip(delay,*tags)
     key = "limit:"+tags.join(".")
     return true if $r.exists(key)
-    $r.setex(key,delay,0)
+    $r.setex(key,delay,1)
     return false
 end
 
