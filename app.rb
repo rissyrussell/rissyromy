@@ -2055,7 +2055,7 @@ end
 def rate_limit_by_ip(delay,*tags)
     key = "limit:"+tags.join(".")
     return true if $r.exists(key)
-    $r.setex(key,delay,1)
+    $r.setex(key,delay,0)
     return false
 end
 
