@@ -320,7 +320,7 @@ get '/submit' do
                 H.inputhidden(:name => "news_id", :value => -1)+
                 H.label(:for => "title") {"Title"}+
                 H.inputtext(:id => "title", :name => "title", :size => 80, :value => (params[:t] ? H.entities(params[:t]) : ""))+H.br+
-                H.label(:for => "url") {"url"}+H.br+
+                H.label(:for => "url") {"Please leave this field blank"}+H.br+
                 H.inputtext(:id => "url", :name => "url", :size => 60, :value => (params[:u] ? H.entities(params[:u]) : ""))+H.br+
                 ""+
                 H.br+
