@@ -75,7 +75,7 @@ end
 
 
 use Rack::Auth::Basic, "Authentication Required" do |username, password|
-  username == 'williamplayfair' and password == 'layalaya123'
+  username == 'williamplayfair' and password == 'visually123'
 end
 
 get '/' do
