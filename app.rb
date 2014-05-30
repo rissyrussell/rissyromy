@@ -792,13 +792,13 @@ post '/api/submit' do
         end
     end
     if params[:news_id].to_i == -1
-        if submitted_recently
-            return {
-                :status => "err",
-                :error => "You have submitted a story too recently, "+
-                "please wait #{allowed_to_post_in_seconds} seconds."
-            }.to_json
-        end
+        #if submitted_recently
+        #    return {
+        #        :status => "err",
+        #        :error => "You have submitted a story too recently, "+
+        #        "please wait #{allowed_to_post_in_seconds} seconds."
+        #    }.to_json
+        #end
         news_id = insert_news(params[:title],params[:url],params[:text],
                               $user["id"])
     else
