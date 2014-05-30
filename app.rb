@@ -324,7 +324,7 @@ get '/submit' do
                 H.inputtext(:id => "url", :name => "url", :size => 60, :value => (params[:u] ? H.entities(params[:u]) : ""))+H.br+
                 ""+
                 H.br+
-                H.label(:for => "text") {"Details"}+
+                H.label(:for => "text") {"Details, including a summary of the problem you're trying to solve, who it affects, as well as your proposed solution"}+
                 H.textarea(:id => "text", :name => "text", :cols => 60, :rows => 10) {}+
                 H.button(:name => "do_submit", :value => "Submit")
             }
